@@ -85,6 +85,8 @@ const Friends = () => {
         <input type="submit" />
       </form>
 
+      <h3>FLY YOU FOOLS!!!!</h3>
+
       <Card.Group itemsPerRow={4}>
         {friends.map(friend => {
           return (
