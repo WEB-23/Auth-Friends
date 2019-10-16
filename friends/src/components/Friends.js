@@ -4,7 +4,7 @@ import { axiosWithAuth } from "../utils/axiosWithAuth.js";
 import { Card } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
-Friends = () => {
+const Friends = () => {
   const [friends, setFriends] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [newFriend, setNewFriend] = useState({
@@ -28,7 +28,7 @@ Friends = () => {
   const handleChange = e => {
     e.preventDefault();
     setNewFriend({ ...newFriend, [e.target.name]: e.target.value });
-    console.log(newFriends);
+    console.log(newFriend);
   };
 
   const handleSubmit = e => {
@@ -100,4 +100,4 @@ Friends = () => {
   );
 };
 
-export const Friends;
+export default Friends;
